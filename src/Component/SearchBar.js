@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from "react";
 import axios from "axios";
 
+console.log(process.env.REACT_APP_ACCESS_KEY);
+
 const SearchBar = ({setImages})=>{
 
     const [search,SetSearch] = useState("nature");
@@ -16,7 +18,7 @@ const SearchBar = ({setImages})=>{
         search && (
             axios.get('https://api.unsplash.com/search/photos',{
             params:{
-                "client_id" :"mzVS1sVFOvcxP_VNXYFFcHmoFsDvJCzs9owDNElF_tY",
+                "client_id" : `${process.env.REACT_APP_ACCESS_KEY}`,
                 query : search
             }
             })
