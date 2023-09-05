@@ -1,10 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 import SearchBar from "./Component/SearchBar";
+import Gallery from "./Component/Gallery";
+import './style.css';
 
 const App = ()=>{
+    const [images,setImages] = useState([]);
+
+
     return(
         <>
-            <SearchBar />
+            <SearchBar setImages={setImages}/>
+            <Gallery images={images}/>
         </>
     );
 }

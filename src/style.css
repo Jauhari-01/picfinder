@@ -1,0 +1,38 @@
+.searchContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap:1rem;
+}
+.searchBarInput{
+    width: 85%;
+    height: 5vh;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    border-radius: 12px;
+}
+#btn{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 8px;
+    font-size: 22px;
+    background-color: rgb(169, 228, 237);
+    color: white;
+}
+
+.gallery{
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    /* width: 400px; */
+    height: 300px;
+
+}
